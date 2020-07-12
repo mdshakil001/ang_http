@@ -1,0 +1,122 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: '[app-test]',
+  // templateUrl: './test.component.html',
+  template: `
+    <div *ngFor="let color of colors; index as k">
+      <h2>{{k}} : {{color}}</h2>
+    </div>
+
+  `,
+
+  // styleUrls: ['./test.component.css']
+
+  styles:[`
+
+  `]
+})
+export class TestComponent implements OnInit {
+  public colors = ["red","blue","green","yellow"]
+  constructor() { }
+
+  ngOnInit(): void {
+    
+  }
+  
+
+}
+
+
+
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: '[app-test]',
+  // templateUrl: './test.component.html',
+  template: `
+    <div *ngFor="let color of colors; first as k">
+      <h2>{{k}} : {{color}}</h2>
+    </div>
+
+  `,
+
+  // styleUrls: ['./test.component.css']
+
+  styles:[`
+
+  `]
+})
+export class TestComponent implements OnInit {
+  public colors = ["red","blue","green","yellow"]
+  constructor() { }
+
+  ngOnInit(): void {
+    
+  }
+  
+
+}
+
+
+//ODD
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: '[app-test]',
+  // templateUrl: './test.component.html',
+  template: `
+    <div *ngFor="let color of colors; odd as k">
+      <h2>{{k}} : {{color}}</h2>
+    </div>
+
+  `,
+
+  // styleUrls: ['./test.component.css']
+
+  styles:[`
+
+  `]
+})
+export class TestComponent implements OnInit {
+  public colors = ["red","blue","green","yellow"]
+  constructor() { }
+
+  ngOnInit(): void {
+    
+  }
+  
+
+}
+
+//EVEN
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: '[app-test]',
+  // templateUrl: './test.component.html',
+  template: `
+    <div *ngFor="let color of colors; even as k">
+      <h2>{{k}} : {{color}}</h2>
+    </div>
+
+  `,
+
+  // styleUrls: ['./test.component.css']
+
+  styles:[`
+
+  `]
+})
+export class TestComponent implements OnInit {
+  public colors = ["red","blue","green","yellow"]
+  constructor() { }
+
+  ngOnInit(): void {
+    
+  }
+  
+
+}
+

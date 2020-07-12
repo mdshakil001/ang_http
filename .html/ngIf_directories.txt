@@ -1,0 +1,46 @@
+ {{{<h2 *ngIf="displayName; else elseBlock">learning angular</h2>
+    
+    <ng-template #elseBlock>
+      <h2>name is hidden !</h2>
+    </ng-template>}}}
+
+
+
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: '[app-test]',
+  // templateUrl: './test.component.html',
+  template: `
+   
+
+    <hr>
+
+    <div *ngIf="displayName; then thenBlobk; else elseBlock"></div>
+    <ng-template #thenBlobk>
+      <h2>angular</h2>
+    </ng-template>
+    <ng-template #elseBlock>
+      <h2>hidden</h2>
+    </ng-template>
+
+  `,
+
+  // styleUrls: ['./test.component.css']
+
+  styles:[`
+
+  `]
+})
+export class TestComponent implements OnInit {
+  displayName = true
+
+  constructor() { }
+
+  ngOnInit(): void {
+    
+  }
+  
+
+}
